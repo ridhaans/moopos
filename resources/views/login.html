@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="{{asset('css/main.css')}}"> -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+
+    <title>Hello, world!</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-login full-height">
+
+        <div class="login-box">
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="container-fluid mx-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 sm-hide p-0">
+                                <img class="img-fluid" src="../../public/moopos_logo4.jpg" alt="Card image cap">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 sm-full col-sm-6 col-xs-12 p-0 ">
+                                <nav>
+                                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab"
+                                            href="#nav-login" role="tab" aria-controls="nav-login"
+                                            aria-selected="true">Masuk</a>
+                                        <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab"
+                                            href="#nav-register" role="tab" aria-controls="nav-register"
+                                            aria-selected="false">Daftar</a>
+                                    </div>
+                                </nav>
+                                <!-- TODO tengahin isi tab-contentnya-->
+                                <div class="logo-container">
+                                    <img class="logo" src="../../public/moopos_mini.png" alt="Card image cap">
+                                </div>
+
+                                <div class="tab-content align-middle vertical-center-container" id="nav-tabContent">
+                                    <div class="tab-pane fade show active " id="nav-login" role="tabpanel"
+                                        aria-labelledby="nav-login-tab">
+                                        <span class="message d-none">
+                                            <p class="text-success text-center pt-4">Some message goes here</p>
+                                        </span>
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg">
+                                                            <i class="fa fa-user text-theme-yellow"></i> </span>
+                                                    </div>
+                                                    <input name="" class="form-control" placeholder="pedagang@gmail.com"
+                                                        type="email">
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg" width="60px"> <i
+                                                                class="fa fa-lock text-theme-yellow"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="******" type="password">
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block"> Masuk
+                                                </button>
+                                            </div> <!-- form-group// -->
+                                            <!-- <p class="text-center"><a href="#" class="btn">Forgot password?</a></p> -->
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-register" role="tabpanel"
+                                        aria-labelledby="nav-register-tab">
+                                        <p class="text-success text-center pt-4 message d-none">Some message goes here
+                                        </p>
+                                        <form>
+                                            <!-- Name  -->
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg" style="padding-left: 9px;">
+                                                            <i class="fa fa-address-card-o text-theme-yellow"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input name="" class="form-control" placeholder="Masukkan nama anda"
+                                                        type="text">
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <!-- Store Name -->
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg" style="padding-left: 10px;">
+                                                            <i class="fa fa-shopping-bag text-theme-yellow"></i> </span>
+                                                    </div>
+                                                    <input name="regist_store" class="form-control"
+                                                        placeholder="Masukkan nama toko anda" type="text">
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <!-- Email  -->
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg">
+                                                            <i class="fa fa-user text-theme-yellow"></i> </span>
+                                                    </div>
+                                                    <input name="regist_email" class="form-control"
+                                                        placeholder="Masukkan email anda" type="email">
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <!-- Password  -->
+
+
+                                            <div class="form-group">
+                                                <div class="input-group" id="show_hide_password">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text theme-bg" width="60px"> <i
+                                                                class="fa fa-lock text-theme-yellow"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Password" type="password">
+                                                    <span class="input-group-addon">
+                                                        <a href="" class="icon-right"><i class="fa fa-eye-slash"
+                                                                aria-hidden="true"></i></a>
+                                                        </span>
+                                                </div> <!-- input-group.// -->
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block"> Daftar
+                                                </button>
+                                            </div> <!-- form-group// -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- card.// -->
+            <!--                     
+                <div class="card" >
+                    <img class="card-img-top"
+                        src="https://cdn0-production-images-kly.akamaized.net/tkhvPD4wU7y3pyTzuUNd6ODdMz0=/640x640/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1141241/original/001968500_1455438595-chi-success-kid-meme-dad-kidney.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="col-sm btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="https://use.fontawesome.com/a537d56265.js"></script>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#show_hide_password a").on('click', function (event) {
+            event.preventDefault();
+            if ($('#show_hide_password input').attr("type") == "text") {
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password .input-group-addon a i').removeClass("fa-eye");
+                $('#show_hide_password .input-group-addon a i').addClass("fa-eye-slash");
+
+            } else if ($('#show_hide_password input').attr("type") == "password") {
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password .input-group-addon a i').removeClass("fa-eye-slash");
+                $('#show_hide_password .input-group-addon a i').addClass("fa-eye");
+                console.log($('#show_hide_password input-group-addon a i'));
+            }
+        });
+    });
+
+</script>
+
+</html>
