@@ -4,7 +4,7 @@
 <style>
     html {
         min-height: 100%;
-        background: url(asset('transaction.jpg') rgba(0, 0, 0, 0.6);
+        background: url("{{asset('transaction.jpg')}}") rgba(0, 0, 0, 0.6);
         background-size: cover;
         background-blend-mode: multiply;
     }
