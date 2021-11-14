@@ -8,15 +8,26 @@ use Illuminate\Notifications\Notifiable;
 
 class Account extends Authenticatable
 {
+    // use Notifiable;
 
-    const FIELD_RULES = [
-        'name' => 'required|min:3|max:50',
-        'store_name'=>'required|max:200|min:3',
-        'email' => 'required|email|unique:account,email',
-        'password' => 'required|min:6',
+    protected $table = 'account';
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'email', 'password', 'role'
     ];
 
-
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
     public static function getValidation($validationType)
     {
@@ -60,24 +71,4 @@ class Account extends Authenticatable
             return $validation;
         }
     }
-    use Notifiable;
-
-    protected $table = 'account';
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password', 'role'
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
 }
