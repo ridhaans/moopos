@@ -28,7 +28,7 @@
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
             <a class="nav-link" href="{{url('/dashboard')}}">
-                <span class="text-theme-yellow">Dashboard</span></a>
+                <span class="text-theme-yellow">Produk</span></a>
         </li>
         <li class="nav-item active">
             <form id="logout-form" action="{{ route('logout') }}" method="POST">
