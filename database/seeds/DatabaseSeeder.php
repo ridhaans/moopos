@@ -4,6 +4,11 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+
+    //Excluding the total of default data
+    const TOTAL_ACCOUNT = 10;
+    const TOTAL_PRODUCTS = 30;
+    const TOTAL_CATEGORY = 3;
     /**
      * Seed the application's database.
      *
@@ -11,6 +16,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        $this->call(AccountSeeder::class);
     }
 }
