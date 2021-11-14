@@ -5,12 +5,16 @@ Unfortunately, it's still under development.
 ## Run
 ### 1. Configure your .env file for database connection 
 ### 2. Run database migration and seeding
-#### run this command php artisan migrate:fresh --path=/database/migrations/moopos --seed
+#### Run this command php artisan migrate:fresh --path=/database/migrations/moopos --seed
 - This will create tables for your database and populate them for you.
 - You will have 1 main user with email sukses@gmail.com and password 123123 and other random user generated (default is 10).
 - These random user password will also be 123123.
 - The main user will have at least 6 products, and then there will be other products (default is 30) assigned to random. 
 - The defaul number can be changed in DatabaseSeeder.php file.
+### 3. Run it in localhost
+#### Run this command php artisan serve --port=8080
+- You can change the port that will listen to the request
+- access http://localhost:[PORT_NUMBER]/ in your browser
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
